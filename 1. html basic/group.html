@@ -1,162 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<style>
-	table, th, td {
-		border: 1px solid #000;
-		border-collapse: collapse;
-	}
-</style>
-<!-- div tag를 사용해서 그룹화를 진행 한다. css 는 추후에 추가-->
-<body>
-<!-- 상단 메뉴 -->
-<div id="wrapper">
-    <header>
-        <h1>logo</h1>
-        <nav>
-            <h2>menu</h2>
-        </nav>
-    </header>
-    <!-- 내용 구분선 -->
-    <hr>
-    <!-- 본문 -->
-    <main>
-        <h2>main content</h2>
-        <section>
-            <h3>section 1</h3>
-            <p>section 1 content</p>
-        </section>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Title</title>
+	</head>
+	<style>
+		table,
+		th,
+		td {
+			border: 1px solid #000;
+			border-collapse: collapse;
+		}
+	</style>
+	<!-- div tag를 사용해서 그룹화를 진행 한다. css 는 추후에 추가-->
+	<body>
+		<!-- 상단 메뉴 -->
+		<div id="wrapper">
+			<header>
+				<h1>logo</h1>
+				<nav>
+					<h2>menu</h2>
+				</nav>
+			</header>
+			<!-- 내용 구분선 -->
+			<hr />
+			<!-- 본문 -->
+			<main>
+				<h2>main content</h2>
+				<section>
+					<h3>section 1</h3>
+					<p>section 1 content</p>
+				</section>
 
-        <!-- 목록을 나타내는 ul li ol tag 차이  -->
-        <h1>비순차 목록 태그</h1>
-        <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-        </ul>
-        <h1>순차 목록 태그</h1>
-        <ol>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-        </ol>
+				<!-- 목록을 나타내는 ul li ol tag 차이  -->
+				<h1>비순차 목록 태그</h1>
+				<ul>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+				</ul>
+				<h1>순차 목록 태그</h1>
+				<ol>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+				</ol>
 
-        <!-- 정의 목록 태그 내용을 정의 하고 기술할 때 사용-->
-        <h1>정의 목록 태그</h1>
-        <dl>
-            <dt>HTML</dt>
-            <dd>Hyper Text Markup Language</dd>
-            <dt>CSS</dt>
-            <dd>Cascading Style Sheet</dd>
-            <dt>JavaScript</dt>
-            <dd>Programming Language</dd>
-        </dl>
+				<!-- 정의 목록 태그 내용을 정의 하고 기술할 때 사용-->
+				<h1>정의 목록 태그</h1>
+				<dl>
+					<dt>HTML</dt>
+					<dd>Hyper Text Markup Language</dd>
+					<dt>CSS</dt>
+					<dd>Cascading Style Sheet</dd>
+					<dt>JavaScript</dt>
+					<dd>Programming Language</dd>
+				</dl>
 
-        <!-- sub menu 구조 -->
-        <h1>sub menu</h1>
-        <ul>
-            <li>1</li>
-            <li>2
-                <ul>
-                    <li>2-1</li>
-                    <li>2-2</li>
-                    <li>2-3</li>
-                </ul>
-            </li>
-            <li>3</li>
-        </ul>
+				<!-- sub menu 구조 -->
+				<h1>sub menu</h1>
+				<ul>
+					<li>1</li>
+					<li>
+						2
+						<ul>
+							<li>2-1</li>
+							<li>2-2</li>
+							<li>2-3</li>
+						</ul>
+					</li>
+					<li>3</li>
+				</ul>
 
-        <!-- table 구조 -->
-        <h1>table 구조</h1>
-        <table>
-            <caption>table caption</caption>
-            <thead>
-            <tr>
-                <th>th1</th>
-                <th>th2</th>
-                <th>th3</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>td1</td>
-                <td>td2</td>
-                <td>td3</td>
-            </tr>
-            <tr>
-                <td>td1</td>
-                <td>td2</td>
-                <td>td3</td>
-            </tr>
-            <tr>
-                <td>td1</td>
-                <td>td2</td>
-                <td>td3</td>
-            </tr>
-            </tbody>
-            <tfoot>
-            <tr>
-                <td>td1</td>
-                <td>td2</td>
-                <td>td3</td>
-            </tr>
-            </tfoot>
-        </table>
+				<!-- table 구조 -->
+				<h1>table 구조</h1>
+				<table>
+					<caption>
+						table caption
+					</caption>
+					<thead>
+						<tr>
+							<th>th1</th>
+							<th>th2</th>
+							<th>th3</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>td1</td>
+							<td>td2</td>
+							<td>td3</td>
+						</tr>
+						<tr>
+							<td>td1</td>
+							<td>td2</td>
+							<td>td3</td>
+						</tr>
+						<tr>
+							<td>td1</td>
+							<td>td2</td>
+							<td>td3</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td>td1</td>
+							<td>td2</td>
+							<td>td3</td>
+						</tr>
+					</tfoot>
+				</table>
 
-        <!-- table row col 구조 -->
-        <h1>table row col 구조</h1>
-        <table>
-            <caption>table caption</caption>
-            <thead>
-            <tr>
-                <th>구분</th>
-                <th>제목 1</th>
-                <th>제목 2</th>
-                <th>제목 3</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>deta1</td>
-                <td colspan="2">data2</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>data3</td>
-                <td rowspan="2">deta4</td>
-                <td>deta5</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>data6</td>
-                <td>deta7</td>
-            </tr>
-            </tbody>
-            <tfoot>
-            <th scope="row">합계</th>
-            <td>data1</td>
-            <td>data2</td>
-            <td>data3</td>
-            </tfoot>
-        </table>
-    </main>
-    <hr>
+				<!-- table row col 구조 -->
+				<h1>table row col 구조</h1>
+				<table>
+					<caption>
+						table caption
+					</caption>
+					<thead>
+						<tr>
+							<th>구분</th>
+							<th>제목 1</th>
+							<th>제목 2</th>
+							<th>제목 3</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>deta1</td>
+							<td colspan="2">data2</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>data3</td>
+							<td rowspan="2">deta4</td>
+							<td>deta5</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>data6</td>
+							<td>deta7</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<th scope="row">합계</th>
+						<td>data1</td>
+						<td>data2</td>
+						<td>data3</td>
+					</tfoot>
+				</table>
+			</main>
+			<hr />
 
-    <!-- a tag 절대 경로 상대 경로
-    target의 종류 _blank 새창 _self 현재창 _parent 부모창 _top 최상위창
-    -->
-    <h1>a tag 절대 경로 상대 경로</h1>
-    <a href="https://www.naver.com" target="_blank">네이버</a>
-    <a href="block_inline.html">block_inline</a>
+			<!-- a tag 절대 경로 상대 경로
+            target의 종류 _blank 새창 _self 현재창 _parent 부모창 _top 최상위창
+            -->
+			<h1>a tag 절대 경로 상대 경로</h1>
+			<a href="https://www.naver.com" target="_blank">네이버</a>
+			<a href="block_inline.html">block_inline</a>
 
-    <!-- 하단 메뉴 -->
-    <footer>
-        <h2>footer</h2>
-    </footer>
-</div>
-</body>
+			<!-- 하단 메뉴 -->
+			<footer>
+				<h2>footer</h2>
+			</footer>
+		</div>
+	</body>
 </html>

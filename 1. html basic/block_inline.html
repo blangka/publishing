@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<!-- 블럭은 기본적으로 브라우저화면의 가로 한 블럭을 모두 차지 한다.
+	<head>
+		<meta charset="UTF-8" />
+		<title>Title</title>
+	</head>
+	<body>
+		<!-- 블럭은 기본적으로 브라우저화면의 가로 한 블럭을 모두 차지 한다.
 h1, h2, h3, h4, h5, h6, p, div, form, ul, ol, li, table, hr, address, fieldset 등등 해당 것들이 그에 해당 된다.
 -->
-    <h1>h1</h1>
-    <p>블럭요소</p>
+		<h1>h1</h1>
+		<p>블럭요소</p>
 
-<!-- 인라인은 기본적으로 브라우저화면의 가로 한 블럭을 모두 차지 하지 않는다.
+		<!-- 인라인은 기본적으로 브라우저화면의 가로 한 블럭을 모두 차지 하지 않는다.
 a, span, strong, em, img, br, input, select, textarea, label, button 등등 해당 것들이 그에 해당 된다.
 -->
-    <span>인라인요소</span>
-    <a href="">구글</a>
+		<span>인라인요소</span>
+		<a href="">구글</a>
 
-<!-- 잘못된 그룹화 -->
-    <span> 안녕하세요 <h1>홍길동 입니다.</h1></span>
+		<!-- 잘못된 그룹화 -->
+		<span>
+			안녕하세요
+			<h1>홍길동 입니다.</h1></span
+		>
 
-<!-- 올바른 그룹화 -->
-    <p>안녕하세요. <span>저는</span> <span>홍길동</span> 입니다.</p>
+		<!-- 올바른 그룹화 -->
+		<p>안녕하세요. <span>저는</span> <span>홍길동</span> 입니다.</p>
 
-<!-- 다양한 문자 정의 요소 2개는 화면 보여지는건 같지만 검색엔진에 검색될 확률을 높이기 위해서는 strong em 을 사용-->
-    <p>문자중 일부 <b>강조</b> 하고자 할때 사용하는 <i>태그들</i></p>
-    <p>문자중 일부 <strong>강조</strong> 하고자 할때 사용하는 <em>태그들</em></p>
+		<!-- 다양한 문자 정의 요소 2개는 화면 보여지는건 같지만 검색엔진에 검색될 확률을 높이기 위해서는 strong em 을 사용-->
+		<p>문자중 일부 <b>강조</b> 하고자 할때 사용하는 <i>태그들</i></p>
+		<p>
+			문자중 일부 <strong>강조</strong> 하고자 할때 사용하는
+			<em>태그들</em>
+		</p>
 
-<!-- 인용문 외부에서 가저온 소스나 내용을 하는 경우-->
-    <blockquote cite="https://www.google.com">
-        <p>인용문</p>
-        <cite>출처</cite>
-    </blockquote>
-</body>
+		<!-- 인용문 외부에서 가저온 소스나 내용을 하는 경우-->
+		<blockquote cite="https://www.google.com">
+			<p>인용문</p>
+			<cite>출처</cite>
+		</blockquote>
+	</body>
 </html>
