@@ -4,5 +4,102 @@
 		<meta charset="UTF-8" />
 		<title>Title</title>
 	</head>
-	<body></body>
+	<body>
+		<!-- image와 관련된 요소들 -->
+		<!-- img의 alt는 이미지가 없을떄 대체 돼는 설명을 의미한다. width height 는 주었지만 가능하다면 css로 처리  하는 것이 좋다.-->
+		<img src="images/1.jpg" alt="이미지 설명" width="100" height="100" />
+		<img src="http://place-hold.it/300x300" alt="이미지 설명" />
+
+		<!-- form 요소들 -->
+		<!-- form 요소는 사용자가 입력한 데이터를 서버로 전송하는 역할을 한다. -->
+		<!-- form 요소는 action 속성을 통해 데이터를 전송할 서버의 주소를 지정한다. -->
+		<!-- method 속성을 통해 데이터를 전송할 방식을 지정한다. -->
+		<!-- method 속성의 값으로는 get과 post가 있다. -->
+		<!-- get 방식은 데이터를 url에 포함시켜 전송한다. -->
+		<!-- post 방식은 데이터를 body에 포함시켜 전송한다. -->
+		<!-- get 방식은 데이터를 url에 포함시켜 전송하기 때문에 보안에 취약하다. -->
+		<!-- post 방식은 데이터를 body에 포함시켜 전송하기 때문에 보안에 안전하다. -->
+		<!-- required는 필수 입력 항목을 의미한다. -->
+		<!-- fieldset 과 legend로 영역을 나눠서 설정 가능하다 -->
+		<h1>form 입력</h1>
+		<form action="#" method="post">
+			<fieldset>
+				<legend>필수 사항</legend>
+				<p>
+					<label for="name">이름</label>
+					<input type="text" id="name" name="name" required />
+				</p>
+				<p>
+					<label for="pw">비밀번호</label>
+					<input type="password" id="pw" name="pw" required />
+				</p>
+				<p>
+					<input type="submit" value="가입하기" />
+					<button type="submit">가입하기</button>
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>선택 사항</legend>
+				<p>
+					<label for="address">주소</label>
+					<select name="address" id="address">
+						<option value="서울">서울</option>
+						<option value="경기">경기</option>
+						<option value="인천">인천</option>
+					</select>
+				</p>
+				<p>
+					<!-- radio 사용시 name을 안해주면 둘다 선택 가능하다 -->
+					<span>성별</span>
+					<label for="male">남자</label>
+					<input type="radio" id="male" name="gender" value="남성" />
+					<label for="female">여성</label>
+					<input type="radio" id="female" name="gender" value="여성" />
+				</p>
+				<p>
+					<label for="hobby">취미</label>
+					<textarea name="hobby" id="hobby" cols="30" rows="10"></textarea>
+				</p>
+				<p>
+					<label for="profile">이미지 등록</label>
+					<input type="file" id="profile" name="profile" />
+				</p>
+				<p>
+					<label for="birth">생년월일</label>
+					<input type="date" id="birth" name="birth" />
+				</p>
+				<!-- datalist는 select와 다르게 목록이 없으면 입력할수 있다. -->
+				<p>
+					<label for="langs">언어</label>
+					<input list="mylist" name="langs" id="langs" />
+					<datalist id="mylist">
+						<option value="한국어"></option>
+						<option value="영어"></option>
+						<option value="중국어"></option>
+					</datalist>
+				</p>
+				<p>
+					<label for="language">학습할 언어 선택</label>
+					<select name="language" id="language">
+						<optgroup label="프로그래밍 언어">
+							<option value="java">자바</option>
+							<option value="python">파이썬</option>
+							<option value="javascript">자바스크립트</option>
+						</optgroup>
+						<optgroup label="프레임워크">
+							<option value="spring">스프링</option>
+							<option value="django">장고</option>
+							<option value="nodejs">노드</option>
+						</optgroup>
+					</select>
+				</p>
+			</fieldset>
+		</form>
+
+		<!-- 오디오 비디오 -->
+		<!-- controls 재생 버튼이 나오게 하는것 autoplay 자동 재생 muted 음소거 -->
+		<h1>오디오 비디오</h1>
+		<video src="video.mp4" controls autoplay muted></video>
+		<audio src="audio.mp3" controls autoplay muted></audio>
+	</body>
 </html>

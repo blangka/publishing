@@ -5,3 +5,9 @@
 
 ## HTML 기초
 HTML tag 및 구성의 기초 적인 부분을 정리 할 예정이다.
+
+
+## 반응형 web 참고 자료
+- [뷰포트 메타태그와 미디어 쿼리](https://nykim.work/84)
+- [vw, vh, vmin, vmax, em, rem 속성](https://nykim.work/85)
+- [image size 맞추기](https://nykim.work/86?category=692675)
