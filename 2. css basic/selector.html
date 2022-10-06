@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Title</title>
+		<link rel="stylesheet" href="selector.css" />
+	</head>
+	<body>
+		<div>전체 선책자</div>
+		<h1>태그 선택자</h1>
+		<div class="class_1">클래스 선택자</div>
+		<div id="logo">아이디 선택자</div>
+
+		<!--
+자식과 자손의 차이는 자식은 바로 아래에 있는 자손은 아래에 있는 모든 자식을 선택한다.
+-->
+
+		<div class="parent">
+			자식 선택자
+			<div class="child">
+				자식 선택자
+				<div>자식 선택자</div>
+			</div>
+		</div>
+
+		<div class="parent2">
+			자손 선택자
+			<div class="child2">
+				자손 선택자
+				<div class="child3">자손 선택자</div>
+			</div>
+		</div>
+
+		<!--
+인접 형제 + 일반 형제의 ~ 차이는 바로 뒤에 오는 것만 체크 할 것인가  혹은 뒤에 오는 것중에 모두 볼것인가 차이 이다.
+-->
+		<div class="sibling1">형제 선택자</div>
+		<ul class="sibling2">
+			<li>test1</li>
+			<li>test2</li>
+		</ul>
+		<div class="sibling3">형제 선택자</div>
+		<ul class="sibling4">
+			<li>test1</li>
+			<li>test2</li>
+		</ul>
+		<div>형제 선택자</div>
+		<ul class="sibling4">
+			<li>test1</li>
+			<li>test2</li>
+		</ul>
+		<!-- 속성 선택자 -->
+		<a href="https://www.naver.com">네이버</a>
+		<a href="https://www.naver.com" target="_self">네이버</a>
+		<a href="https://www.naver.com" target="_blank">네이버</a>
+
+		<!-- 가상 클래스 선택자 -->
+		<h1>가상 클래스 선택자</h1>
+		<!-- 가상 요소 선택자-->
+		<h2>가상 요소 선택자</h2>
+		<!-- 구조 선택자 -->
+		<ul>
+			<div class="struct">
+				<li>구조 선택자</li>
+				<div>구조 선택자</div>
+				<li>구조 선택자</li>
+				<div>구조 선택자</div>
+				<li>구조 선택자</li>
+				<div>구조 선택자</div>
+				<li>구조 선택자</li>
+			</div>
+		</ul>
+		<ul>
+			<div class="struct2">
+				<li>구조 선택자</li>
+				<div>구조 선택자</div>
+				<li>구조 선택자</li>
+				<div>구조 선택자</div>
+				<li>구조 선택자</li>
+				<div>구조 선택자</div>
+				<li>구조 선택자</li>
+			</div>
+		</ul>
+	</body>
+</html>

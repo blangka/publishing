@@ -1,0 +1,148 @@
+@font-face {
+	font-family: "NanumGothic";
+	src: url("fonts/NanumGothic.woff") format("woff"),
+	url("fonts/NanumGothic.ttf") format("truetype");
+	font-size: larger;
+}
+
+p {
+	font-family: "NanumGothic", sans-serif;
+}
+
+/*  text decoration */
+.none a {
+	text-decoration: none;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.overline {
+	text-decoration: overline;
+}
+
+.line-through {
+	text-decoration: line-through;
+}
+
+.dotted {
+	text-decoration: dotted;
+}
+
+.dashed {
+	text-decoration: dashed;
+}
+
+.wavy {
+	text-decoration: wavy;
+}
+
+.both {
+	text-decoration: overline underline solid red;
+}
+
+.text-align-left {
+	text-align: left;
+}
+
+.text-align-right {
+	text-align: right;
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+.text-align-justify {
+	text-align: justify;
+}
+
+.letter-spacing {
+	letter-spacing: 10px;
+}
+
+.word-spacing {
+	word-spacing: 10px;
+}
+
+.line-height {
+	line-height: 2;
+}
+
+/* 들여 쓰기 */
+.text-indent-1 {
+	border: 1px solid black;
+	width: 80%;
+	text-indent: 20px;
+}
+
+.text-indent-2 {
+	border: 1px solid black;
+	width: 80%;
+	text-indent: -20px;
+}
+
+/* text transform */
+.uppercase {
+	text-transform: uppercase;
+}
+
+.lowercase {
+	text-transform: lowercase;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+
+/* vertical align */
+h2 span {
+	color: #fff;
+	background: #3498db;
+}
+
+h2 span:first-letter {
+	font-size: 25px;
+}
+
+h2 span:last-child {
+	font-size: 12px;
+}
+
+.vertical-align-baseline {
+	vertical-align: baseline;
+}
+
+.vertical-align-top {
+	vertical-align: top;
+}
+
+.vertical-align-middle {
+	vertical-align: middle;
+}
+
+.vertical-align-bottom {
+	vertical-align: bottom;
+}
+
+.vertical-align-text-top {
+	vertical-align: text-top;
+}
+
+.vertical-align-text-bottom {
+	vertical-align: text-bottom;
+}
+
+.vertical-align-sub {
+	vertical-align: sub;
+}
+
+.vertical-align-super {
+	vertical-align: super;
+}
+
+.vertical-align-pixel {
+	vertical-align: 20px;
+}

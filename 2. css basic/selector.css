@@ -1,0 +1,121 @@
+/* 전체 선택자 */
+* {
+	color: green;
+}
+
+/* 태그 선택자 */
+h1 {
+	color: red;
+}
+
+/* 클래스 선택자 */
+
+.class_1 {
+	font-size: 20px;
+}
+
+/* 아이디 선택자 */
+#logo {
+	color: blue;
+}
+
+/* 자식 선택자 */
+.parent > .child {
+	background-color: blue;
+	color: yellow;
+}
+
+/* 자손 선택자 */
+.parent2 .child2 {
+	background-color: green;
+	color: orange;
+}
+
+.child3 {
+	color: white;
+}
+
+.sibling1 {
+	font-size: 10px;
+}
+
+.siblings2 {
+	font-size: 20px;
+}
+
+.siblings3 {
+	font-size: 30px;
+}
+
+.siblings4 {
+	font-size: 40px;
+}
+
+/* 인접 형제 선택자 */
+.sibling1 + .sibling2 {
+	background-color: red;
+}
+
+/* 일반 형제 선택자 */
+.sibling3 ~ .sibling4 {
+	background-color: blue;
+}
+
+/* 속성 선택자 */
+/* [속성] */
+/* [속성=값] */
+/* [속성~=값] */
+/* [속성|=값] */
+/* [속성^=값] */
+/* [속성$=값] */
+/* [속성*=값] */
+/* [속성1][속성2] */
+[target]{
+	text-decoration: none;
+}
+[target=_blank]{
+	background: red;
+}
+
+/* 가상 클래스 선택자 */
+h1:hover {
+	background: red;
+}
+
+/* 가상 요소 선택자 */
+h2::before {
+	content: "before";
+}
+
+h2::after {
+	content: "after";
+}
+
+/* 구조 선택자
+nth-child 는 부모 엘리먼트의 모든 자식중 엘리먼트중 n번째
+nth-of-type은 부모 엘리먼의틔 특정자식 엘리먼트중 n번째
+*/
+
+.struct > li:first-child {
+	background: blue;
+}
+
+.struct > li:last-child {
+	background: green;
+}
+
+.struct > li:nth-child(2) {
+	background: yellow;
+}
+
+.struct2 > li:first-child {
+	background: blue;
+}
+
+.struct2 > li:last-child {
+	background: green;
+}
+
+.struct2 > li:nth-of-type(2) {
+	background: yellow;
+}

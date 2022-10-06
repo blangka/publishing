@@ -1,0 +1,39 @@
+.class_2 {
+	color: #00f800;
+	font-size: 20px;
+}
+body {
+	font-size: 12px;
+}
+
+.c3 {
+	background-color: rgba(0, 0, 255, 0.5);
+}
+
+.c4 {
+	background-color: hsl(120, 100%, 50%);
+	padding: 20px;
+	color: #fff;
+}
+
+.px {
+	width: 200px;
+	background-color: silver;
+}
+
+.percent {
+	width: 50%;
+	background-color: blue;
+}
+
+.em {
+	width: 10em;
+	font-size: 1.2em;
+	background-color: red;
+}
+
+.vwh {
+	width: 100vw;
+	height: 10vh;
+	background-color: green;
+}
