@@ -1,0 +1,104 @@
+.span_inline {
+	width: 50%;
+	background: green;
+	color: #fff;
+}
+
+.span_block {
+	width: 50%;
+	background: green;
+	color: #fff;
+	display: block;
+}
+
+.box_inline {
+	width: 50%;
+	background: blue;
+	color: #fff;
+	display: inline;
+}
+
+.box_block {
+	width: 50%;
+	background: blue;
+	color: #fff;
+}
+
+.menu li {
+	width: 150px;
+	padding: 10px;
+	background: #3498db;
+	line-height: 40px;
+	list-style: none;
+	text-align: center;
+}
+
+.menu_inline_block {
+	text-align: center;
+}
+
+.menu_inline_block li {
+	width: 150px;
+	padding: 10px;
+	background: #3498db;
+	line-height: 40px;
+	list-style: none;
+	display: inline-block;
+}
+
+img {
+	width: 200px;
+	height: auto;
+}
+
+/* inline-block 은 페이지를 넘어가면 넘쳐 흐른다 하지만 display: table을 사용하면 딱 맞게  크기가 된다 */
+.portfolio {
+	text-align: center;
+}
+
+.portfolio li {
+	width: 33.333%;
+	line-height: 40px;
+	list-style: none;
+	background: yellow;
+	display: inline-block;
+}
+
+.portfolio_table {
+	display: table;
+	width: 100%;
+	padding: 0;
+}
+
+.portfolio_table li {
+	width: 33.333%;
+	line-height: 40px;
+	list-style: none;
+	background: yellow;
+	display: table-cell;
+	text-align: center;
+}
+
+h2 {
+	display: none;
+}
+
+h3 {
+	visibility: hidden;
+}
+
+h4 {
+	opacity: 0;
+}
+
+h4:hover {
+	opacity: 1;
+}
+
+header:hover h2{
+	display: block;
+}
+
+header:hover h3{
+	visibility: visible;
+}

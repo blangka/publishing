@@ -58,14 +58,15 @@ CSS 의 심화 과정이 아닌 초급 과정을 리마인드 할 예정이다. 
         1. font-family : 폰트를 지정한다. font-family: "Times New Roman", Times, serif; 처럼 여러개의 폰트를 지정할 수 있다.
         2. font-size : 폰트의 크기를 지정한다. font-size: 16px; 처럼 px, em, rem, % 등을 사용할 수 있다.
         3. font-weight : 폰트의 굵기를 지정한다. font-weight: bold; 처럼 bold, normal, 100 ~ 900 등을 사용할 수 있다.  
-            initial 은 기본 값으로 돌리는 것이고 inherit은 부모 요소의 값을 상속 받는다
+           initial 은 기본 값으로 돌리는 것이고 inherit은 부모 요소의 값을 상속 받는다
         4. font-style : 폰트의 스타일을 지정한다. font-style: italic; 처럼 italic, normal 등을 사용할 수 있다.
         5. font-variant : 폰트의 변형을 지정한다. font-variant: small-caps; 처럼 small-caps, normal 등을 사용할 수 있다.
         6. font : font-family, font-size, font-weight, font-style, font-variant를 한번에 지정할 수 있다. font: italic bold
            12px/30px Georgia, serif; 처럼 사용할 수 있다.
     2. @font-face
         1. @font-face를 사용하면 웹페이지에서 사용할 폰트를 지정할 수 있다.
-        2. @font-face { font-family: "NanumGothic"; src: url("fonts/NanumGothic.woff") format("woff"), url("fonts/NanumGothic.ttf") format("truetype"); }
+        2. @font-face { font-family: "NanumGothic"; src: url("fonts/NanumGothic.woff") format("woff"), url("
+           fonts/NanumGothic.ttf") format("truetype"); }
         3. font-family에 지정한 이름으로 폰트를 사용할 수 있다.
         4. src에 지정한 url을 사용하여 폰트를 불러온다.
         5. format에 지정한 형식으로 폰트를 불러온다.
@@ -76,16 +77,35 @@ CSS 의 심화 과정이 아닌 초급 과정을 리마인드 할 예정이다. 
     3. 실제 font 사용 사례
         1. local에 저장해서 쓰는 방법
         2. CDN 방식의 폰트로 https://fonts.google.com/ 에서 원하는 폰트를 선택해서 사용하는 방법
-        3. AWS s3에 올려서 사용하는 방법  
+        3. AWS s3에 올려서 사용하는 방법
     4. text-align
         1. text-align: left; 처럼 left, right, center, justify 등을 사용할 수 있다.
-        2. text-align은 block 요소 안에 있는 inline 요소들을 정렬할 때 사용한다.  
+        2. text-align은 block 요소 안에 있는 inline 요소들을 정렬할 때 사용한다.
     5. 글자 간격
         1. letter-spacing : 글자 간격을 지정한다. letter-spacing: 2px; 처럼 px, em, rem, % 등을 사용할 수 있다.
-        2. word-spacing : 단어 간격을 지정한다. word-spacing: 2px; 처럼 px, em, rem, % 등을 사용할 수 있다.  
+        2. word-spacing : 단어 간격을 지정한다. word-spacing: 2px; 처럼 px, em, rem, % 등을 사용할 수 있다.
     6. 글자 수직 정렬  
-        vertical-align : 글자 수직 정렬을 지정한다. vertical-align: top; 처럼 top, middle, bottom, baseline 등을 사용할 수 있다.  
+       vertical-align : 글자 수직 정렬을 지정한다. vertical-align: top; 처럼 top, middle, bottom, baseline 등을 사용할 수 있다.
     7. vertical-align : top 으로 이미지 들어간 곳의 공백을 없앨수 있다.
+
+
+4. list style
+    1. list-style-type : 리스트의 마커를 지정한다. list-style-type: square; 처럼 disc, circle, square, decimal, lower-roman,
+       upper-roman, lower-alpha, upper-alpha 등을 사용할 수 있다.
+    2. list-style-image : 리스트의 마커를 이미지로 지정한다. list-style-image: url("images/marker.png"); 처럼 url을 사용할 수 있다.
+    3. list-style-position : 리스트의 마커의 위치를 지정한다. list-style-position: inside; 처럼 inside, outside 등을 사용할 수 있다.
+    4. list-style : list-style-type, list-style-image, list-style-position을 한번에 지정할 수 있다. list-style: inside square; 처럼
+       사용할 수 있다.
+
+5. display 속성
+    1. block : 블록 요소로 지정한다. width, height, margin, padding 등을 사용할 수 있다.  
+       inline 요소 들은 width 를 주어도 적용되지 않는데 이때 display: block; 을 사용하면 width를 줄 수 있다. 세로로 배치 된다.
+    2. inline : 인라인 요소로 지정한다. width, height, margin, padding 등을 사용할 수 없다. 가로로 배치 된다.
+    3. inline-block : block 과 inline의 특성을 합한것으로 가로로 배치 되지만 크기를 줄수 있다.   
+       인라인 블록 요소로 지정한다. width, height, margin, padding 등을 사용할 수 있다. 가로로 배치 된다.
+    4. table, table-cell : inline-block 은 넘어가면 아래로 가게 되는데 table을 이용하면 딱 화면에 맞춰서 넣는 것이 가능하다.
+    5. 안보이게 하는 방법 :  display none , visibility hidden, opacity 0  
+
 
 ## 반응형 web 참고 자료
 
