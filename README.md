@@ -85,7 +85,7 @@ CSS 의 심화 과정이 아닌 초급 과정을 리마인드 할 예정이다. 
         2. word-spacing : 단어 간격을 지정한다. word-spacing: 2px; 처럼 px, em, rem, % 등을 사용할 수 있다.  
     6. 글자 수직 정렬  
         vertical-align : 글자 수직 정렬을 지정한다. vertical-align: top; 처럼 top, middle, bottom, baseline 등을 사용할 수 있다.  
-    7. 
+    7. vertical-align : top 으로 이미지 들어간 곳의 공백을 없앨수 있다.
 
 ## 반응형 web 참고 자료
 
