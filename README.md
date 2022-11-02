@@ -1,6 +1,7 @@
 # publishing
 
-파편적으로 css html을 학습해서 작업하고 있었지만 이번에는 더 깊게 공부하고 싶어서 책을 구매했다. 책과 함께 publishing에 대한 전반적인 개념을 정리 할 예정이다.
+파편적으로 css html을 학습해서 작업하고 있었지만 이번에는 더 깊게 공부하고 싶어서 책을 구매했다. 책과 함께 publishing에 대한 전반적인 개념을 정리 할 예정이다.  
+github : https://github.com/ezwebpublishing/with_coding_web
 
 ## HTML 기초
 
@@ -104,8 +105,23 @@ CSS 의 심화 과정이 아닌 초급 과정을 리마인드 할 예정이다. 
     3. inline-block : block 과 inline의 특성을 합한것으로 가로로 배치 되지만 크기를 줄수 있다.   
        인라인 블록 요소로 지정한다. width, height, margin, padding 등을 사용할 수 있다. 가로로 배치 된다.
     4. table, table-cell : inline-block 은 넘어가면 아래로 가게 되는데 table을 이용하면 딱 화면에 맞춰서 넣는 것이 가능하다.
-    5. 안보이게 하는 방법 :  display none , visibility hidden, opacity 0  
+    5. 안보이게 하는 방법 :  display none , visibility hidden, opacity 0
 
+6. overflow 속성
+    1. auto : 넘치는 내용을 자동으로 처리한다.
+    2. hidden : 넘치는 내용을 숨긴다.
+    3. scroll : 넘치는 내용을 스크롤바로 처리한다.
+    4. visible : 넘치는 내용을 그대로 보여준다.
+    5. overflow-x : 가로축으로 넘치는 내용을 처리한다.
+    6. overflow-y : 세로축으로 넘치는 내용을 처리한다.
+
+7. background 속성
+    1. background-color : 배경색을 지정하고 #00f 처럼 16진수로 지정하거나 blue 와 같은 이름 rgb, rgba 를 사용해서 지정가능하다. 투명도의 경우에는 opacity 를 사용한다.
+    2. background-image : 배경 이미지를 지정한다. url("images/bg.jpg") 처럼 url을 사용한다.
+    3. background-repeat : 배경 이미지를 반복할지 지정한다. repeat, repeat-x, repeat-y, no-repeat 등을 사용할 수 있다.
+    4. background-attachment : 배경 이미지를 고정할지 지정한다. fixed, scroll 등을 사용할 수 있다. fixed 를 사용하면 고정되어서 스크롤을 내려도 유지 된다.  
+   5. background-position : 배경 이미지의 위치를 지정한다. left top, center center, 100px 100px 등을 사용할 수 있다. 기본 값은 0 0 이고 첫번쨰는 가로축 두번쨰 값은 세로축 값이다. % 혹은 px로 선택 가능하다  
+   6. background-size : 배경 이미지의 크기를 지정한다. cover, contain 등을 사용할 수 있다. cover 는 이미지가 화면을 꽉 채우고 contain 은 이미지가 화면을 꽉 채우지 않는다.
 
 ## 반응형 web 참고 자료
 
