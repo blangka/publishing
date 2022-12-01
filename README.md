@@ -119,12 +119,95 @@ CSS 의 심화 과정이 아닌 초급 과정을 리마인드 할 예정이다. 
     1. background-color : 배경색을 지정하고 #00f 처럼 16진수로 지정하거나 blue 와 같은 이름 rgb, rgba 를 사용해서 지정가능하다. 투명도의 경우에는 opacity 를 사용한다.
     2. background-image : 배경 이미지를 지정한다. url("images/bg.jpg") 처럼 url을 사용한다.
     3. background-repeat : 배경 이미지를 반복할지 지정한다. repeat, repeat-x, repeat-y, no-repeat 등을 사용할 수 있다.
-    4. background-attachment : 배경 이미지를 고정할지 지정한다. fixed, scroll 등을 사용할 수 있다. fixed 를 사용하면 고정되어서 스크롤을 내려도 유지 된다.  
-   5. background-position : 배경 이미지의 위치를 지정한다. left top, center center, 100px 100px 등을 사용할 수 있다. 기본 값은 0 0 이고 첫번쨰는 가로축 두번쨰 값은 세로축 값이다. % 혹은 px로 선택 가능하다  
-   6. background-size : 배경 이미지의 크기를 지정한다. cover, contain 등을 사용할 수 있다. cover 는 이미지가 화면을 꽉 채우고 contain 은 이미지가 화면을 꽉 채우지 않는다.
+    4. background-attachment : 배경 이미지를 고정할지 지정한다. fixed, scroll 등을 사용할 수 있다. fixed 를 사용하면 고정되어서 스크롤을 내려도 유지 된다.
+    5. background-position : 배경 이미지의 위치를 지정한다. left top, center center, 100px 100px 등을 사용할 수 있다. 기본 값은 0 0 이고 첫번쨰는 가로축
+       두번쨰 값은 세로축 값이다. % 혹은 px로 선택 가능하다
+    6. background-size : 배경 이미지의 크기를 지정한다. cover, contain 등을 사용할 수 있다. cover 는 이미지가 화면을 꽉 채우고 contain 은 이미지가 화면을 꽉 채우지
+       않는다.
 
 ## 반응형 web 참고 자료
 
 - [뷰포트 메타태그와 미디어 쿼리](https://nykim.work/84)
 - [vw, vh, vmin, vmax, em, rem 속성](https://nykim.work/85)
 - [image size 맞추기](https://nykim.work/86?category=692675)
+
+## flex grid 기초(3. flex grid 폴더)
+
+### flex
+
+기본적인 flex 만 사용하면 inline-block 처럼 내용물의 넓이 만큼 가로 정렬 을 한다.
+
+### flex-direction
+
+방향을 결정 할때 사용한다.
+
+1. row : 기본값으로 가로 정렬
+2. row-reverse : 가로 정렬을 반대로
+3. column : 세로 정렬
+4. column-reverse : 세로 정렬을 반대로
+
+### flex-wrap
+
+줄바꿈을 어떻게 할지를 결정한다.
+
+1. nowrap : 기본값으로 내용물이 넘치면 줄바꿈을 하지 않는다.
+2. wrap : 내용물이 넘치면 줄바꿈을 한다.
+3. wrap-reverse : 내용물이 넘치면 줄바꿈을 한다. 줄바꿈을 반대로 한다.
+
+### flex-flow
+
+direction 과 wrap 을 한번에 사용할 수 있다.
+
+### justify-content
+
+메인축 방향으로 아이템을 정렬 하는 속성
+
+1. flex-start : 기본값으로 왼쪽 정렬
+2. flex-end : 오른쪽 정렬
+3. center : 가운데 정렬
+4. space-between : 아이템 사이에 동일한 간격을 둔다.
+5. space-around : 아이템 주위에 동일한 간격을 둔다.
+6. space-evenly : 아이템 사이에 동일한 간격을 둔다. 아이템 주위에 동일한 간격을 둔다.
+
+### align-items
+
+수직축 방향 정렬
+
+1. stretch : 기본값으로 아이템의 높이를 부모의 높이로 맞춘다.
+2. flex-start : 아이템을 위쪽 정렬
+3. flex-end : 아이템을 아래쪽 정렬
+4. center : 아이템을 가운데 정렬
+5. baseline : 아이템을 기준선에 정렬
+
+정 가운데로 주려면 justify-content : center 와 align-items : center 를 같이 사용해야 한다.
+
+### align-content
+
+여러 행 정렬로 아이템들의 행이 2줄 이상 되었을때의 수직축 방량 정렬을 결정하는 속성 입니다.
+
+1. stretch : 기본값으로 아이템의 높이를 부모의 높이로 맞춘다.
+2. flex-start : 아이템을 위쪽 정렬
+3. flex-end : 아이템을 아래쪽 정렬
+4. center : 아이템을 가운데 정렬
+5. space-between : 아이템 사이에 동일한 간격을 둔다.
+6. space-around : 아이템 주위에 동일한 간격을 둔다.
+7. space-evenly : 아이템 사이에 동일한 간격을 둔다. 아이템 주위에 동일한 간격을 둔다.
+
+### align-self
+
+align-items 와 같은 속성이지만 개별 아이템에 적용 할 수 있다.
+
+1. auto : 기본값으로 부모의 align-items 속성을 상속 받는다.
+2. stretch : 아이템의 높이를 부모의 높이로 맞춘다.
+3. flex-start : 아이템을 위쪽 정렬
+4. flex-end : 아이템을 아래쪽 정렬
+5. center : 아이템을 가운데 정렬
+6. baseline : 아이템을 기준선에 정렬
+
+### flex 아이템에 적용하는 속성들
+
+### flex-basis
+
+유연한 박스의 기본 영역으로 아이템의 기본 크기를 설정합니다. flex-direction이 row 일때는 너비, column 일때는 높이를 설정합니다.
+
+### fl

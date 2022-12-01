@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container-basic {
+            display: flex;
+        }
+
+        .container-self {
+            display: flex;
+            height: 400px;
+        }
+
+        .flex-direction-row {
+            flex-direction: row;
+        }
+
+        .flex-direction-column {
+            flex-direction: column;
+        }
+
+        .item-basic {
+            width: 200px;
+            background-color: aqua;
+            text-align: center;
+        }
+
+        .item-flex-basis {
+            flex-basis: 500px;
+        }
+
+        .flex-wrap-no-wrap {
+            flex-wrap: nowrap;
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .justify-content {
+            justify-content: center;
+            /*
+            * justify-content: flex-start;
+            * justify-content: flex-end;
+            * justify-content: space-between;
+            * justify-content: space-around;
+            * justify-content: space-evenly;
+            */
+        }
+
+        .align-item {
+            align-items: center;
+            /*
+            * align-items: flex-start;
+            * align-items: flex-end;
+            * align-items: stretch;
+            * align-items: baseline;
+            */
+
+            height: 300px;
+            background-color: antiquewhite;
+        }
+
+        .align-self {
+            align-self: center;
+            /*
+            * align-self: flex-start;
+            * align-self: flex-end;
+            * align-self: stretch;
+            * align-self: baseline;
+            */
+        }
+
+        .align-content {
+            flex-wrap: wrap;
+            align-content: stretch;
+            /*
+            * align-content: flex-start;
+            * align-content: flex-end;
+            * align-content: space-between;
+            * align-content: space-around;
+            * align-content: center;
+            */
+
+            height: 300px;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+<div> flex 기본 가로 정렬</div>
+<div class="container-basic">
+    <div class="item-basic">item1</div>
+    <div class="item-basic">item2</div>
+    <div class="item-basic">item3</div>
+</div>
+<div> flex-direction-row</div>
+<div class="container-basic flex-direction-row">
+    <div class="item-basic">item1</div>
+    <div class="item-basic">item2</div>
+    <div class="item-basic">item3</div>
+</div>
+<div> flex-direction-column</div>
+<div class="container-basic flex-direction-column">
+    <div class="item-basic">item1</div>
+    <div class="item-basic">item2</div>
+    <div class="item-basic">item3</div>
+</div>
+<div>flex-wrap-no-wrap</div>
+<div class="container-basic flex-wrap-no-wrap">
+    <div class="item-basic">item1</div>
+    <div class="item-basic">item2</div>
+    <div class="item-basic">item3</div>
+</div>
+<div>flex-wrap</div>
+<div class="container-basic flex-wrap">
+    <div class="item-basic">item1</div>
+    <div class="item-basic">item2</div>
+    <div class="item-basic">item3</div>
+</div>
+<div>flex-justify-content</div>
+<div class="container-basic justify-content">
+    <div class="item-basic">item1</div>
+    <div class="item-basic">item2</div>
+    <div class="item-basic">item3</div>
+</div>
+<div>flex-align-item</div>
+<div class="container-basic align-item">
+    <div class="item-basic">item1</div>
+    <div class="item-basic">item2</div>
+    <div class="item-basic">item3</div>
+</div>
+<div>flex-align-content</div>
+<div class="container-basic align-content">
+    <div class="item-basic">item1</div>
+    <div class="item-basic">item2</div>
+    <div class="item-basic">item3</div>
+</div>
+<div>flex-align-self</div>
+<div class="container-self">
+    <div class="item-basic">item1</div>
+    <div class="item-basic align-self">item2</div>
+    <div class="item-basic">item3</div>
+</div>
+<div>flex-basic</div>
+<div class="container-basic">
+    <div class="item-flex-basis">item1</div>
+    <div class="item-flex-basis">item2</div>
+    <div class="item-flex-basis">item3</div>
+</div>
+</body>
+</html>
