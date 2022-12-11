@@ -228,3 +228,6 @@ flex 가 1차원 이라면 grid는 2차원으로 flex와 grid를 같이 사용�
 
 <img width="853" alt="스크린샷 2022-12-12 오전 8 28 31" src="https://user-images.githubusercontent.com/98309975/206935342-288f5e35-3f3c-40e5-a07a-8b15ee1238ac.png">
 
+
+![스크린샷 2022-12-12 오전 8 56 50](https://user-images.githubusercontent.com/98309975/206936752-cf7dd062-c62f-4c27-b9ad-e0376d34f78d.png)
+
