@@ -224,6 +224,7 @@ flex-grow 와 쌍을 이루는 속성으로 0으로 세팅하면 flex-basis보�
 
 ## Grid
 
+https://studiomeal.com/archives/533 참고   
 flex 가 1차원 이라면 grid는 2차원으로 flex와 grid를 같이 사용하면 더욱 유연한 레이아웃을 만들 수 있다.
 
 <img width="853" alt="스크린샷 2022-12-12 오전 8 28 31" src="https://user-images.githubusercontent.com/98309975/206935342-288f5e35-3f3c-40e5-a07a-8b15ee1238ac.png">
@@ -231,3 +232,27 @@ flex 가 1차원 이라면 grid는 2차원으로 flex와 grid를 같이 사용�
 
 ![스크린샷 2022-12-12 오전 8 56 50](https://user-images.githubusercontent.com/98309975/206936752-cf7dd062-c62f-4c27-b9ad-e0376d34f78d.png)
 
+### grid 간략 설명
+
+1. 그리드 컨테이너 (Grid Container)  
+   display: grid를 적용하는, Grid의 전체 영역입니다. Grid 컨테이너 안의 요소들이 Grid 규칙의 영향을 받아 정렬된다고 생각하면 됩니다. 위
+   코드 <div class=”container”></div>가 Grid 컨테이너예요.
+2. 그리드 아이템 (Grid Item)  
+   Grid 컨테이너의 자식 요소들입니다. 바로 이 아이템들이 Grid 규칙에 의해 배치되는 거예요. 위 코드에서 <div class=”item”></div>들이 Grid 아이템입니다.
+3. 그리드 트랙 (Grid Track)  
+   Grid의 행(Row) 또는 열(Column)
+4. 그리드 셀 (Grid Cell)  
+   Grid의 한 칸을 가리키는 말이에요. <div>같은 실제 html 요소는 그리드 아이템이고, 이런 Grid 아이템 하나가 들어가는 “가상의 칸(틀)”이라고 생각하면 됩니다.
+5. 그리드 라인(Grid Line)  
+   Grid 셀을 구분하는 선입니다.
+6. 그리드 번호(Grid Number)  
+   Grid 라인의 각 번호입니다.
+7. 그리드 갭(Grid Gap)  
+   Grid 셀 사이의 간격입니다.
+8. 그리드 영역(Grid Area)  
+   Grid 라인으로 둘러싸인 사각형 영역으로, 그리드 셀의 집합이에요
+
+### grid 형태 정의
+
+grid-template-rows : 행의 속성 정의  
+grid-template-columns : 열의 속성 정의
